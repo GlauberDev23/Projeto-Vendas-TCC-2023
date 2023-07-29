@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+.container{
+    width: 100%;
+    max-width: 5500px;
+    padding: auto;
+    margin: 0 auto;
+}
+#header{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo1{
+    width: 180px;
+}
+#input1{
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    width: 260px;
+    height: 36px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 30px;
+    top: 27px;
+    padding-left: 14px;
+    outline: none;
+}
+#logoInput{
+    margin: 24px 40px;
+}
+li{
+    list-style: none;
+}
+#menu1{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 32px;
+    margin: 20px 40px; 
+}
+
+#lupa{
+    position: relative;
+    top: -9px;
+    left: 270px;
+    width: 20px;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#menuItem:hover{
+    color: #ffe675;
+}
+#casinha{
+    width: 24px;
+}
+#liquidacao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#compras{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------*/
+
+.titulo1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: -190px;
+    display: flex;
+    justify-content: center;
+    max-width: 920px;
+    padding: 20px;
+    margin-left: 16%;
+    border-radius: 30px;
+    background-color: blueviolet;
+    color: #ffffff;
+}
+.fotoLOL{
+    width: 1366px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.ofertadia{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px; /* bug da tela pro lado */
+    color: rgb(0, 0, 0);
+    margin-left: 7%;  
+}
+
+/* PRODUTO DO ZED */
+.PassarParaOLadoOfertas{
+    width: 40px;
+}
+.ProdutosDaOferta{
+    display: flex;
+    align-items: center;
+}
+.Zed{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    color: #000000;
+    margin-left: 7%;
+    max-width: 300px;
+    width: 260px;
+    padding: 20px 0px 60px 20px;
+    border-radius: 0px 0px 40px 40px;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: inset 0px 0px 0px 0px blueviolet;
+    border: 1px solid #cacaca;
+}
+.Zed:hover, .Zed:focus{
+    box-shadow: inset 0px 0px 0px 2px blueviolet;
+}
+.SetaParaMostrarZed{
+    position: relative;
+    left: 220px;
+    bottom: 4px;
+}
+.CorLetrasZed1{
+    color: #000000;
+}
+.TituloZed1{
+    font-family: 'Inter', sans-serif;
+    font-size: 20.5px;
+    color: rgb(0, 0, 0);
+}
+.PrecoAnteriorZed{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+.PrecoNovoZed{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-left: 4px;
+}
+.DeZed{
+    padding-top: 22px;
+    border-top: 2px solid rgb(117, 117, 117);
+    color: red;
+}
+.PorZed{
+    color: blueviolet;
+}
+.AVistaZed{
+    padding-bottom: 26px;
+    border-bottom: 2px solid rgb(117, 117, 117);
+}
+.PrecoCartaoZed{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+.SeisXZed{
+    color: blueviolet;
+}
+.JurosZed{
+    font-size: 12px;
+}
+.ImagemDoZed1{
+    width: 280px;
+    position: relative;
+    top: 5px;
+    right: 18px;
+}
+
+/* TERMINO DO PRODUTO ZED */
+
+/* PRODUTO DA ASHE */
+
+.Ashe{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    color: #000000;
+    margin-left: 7%;
+    max-width: 300px;
+    width: 260px;
+    padding: 20px 0px 55px 22px;
+    border-radius: 0px 0px 40px 40px;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: inset 0px 0px 0px 0px blueviolet;
+    border: 1px solid #cacaca;
+    position: relative;
+    right: 46px;
+}
+.Ashe:hover, .Ashe:focus{
+    box-shadow: inset 0px 0px 0px 2px blueviolet;
+}
+.SetaParaMostrarAshe{
+    position: relative;
+    left: 220px;
+    bottom: 294px;
+}
+.CorLetrasAshe1{
+    color: #000000;
+}
+.TituloAshe1{
+    font-family: 'Inter', sans-serif;
+    font-size: 20.5px;
+    color: rgb(0, 0, 0);
+}
+.PrecoAnteriorAshe{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+.PrecoNovoAshe{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-left: 4px;
+}
+.DeAshe{
+    padding-top: 22px;
+    border-top: 2px solid rgb(117, 117, 117);
+    color: red;
+}
+.PorAshe{
+    color: blueviolet;
+}
+.AVistaAshe{
+    padding-bottom: 26px;
+    border-bottom: 2px solid rgb(117, 117, 117);
+}
+.PrecoCartaoAshe{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+.SeisXAshe{
+    color: blueviolet;
+}
+.JurosAshe{
+    font-size: 12px;
+}
+.ImagemDaAshe1{
+    width: 200px;
+    position: relative;
+    top: 5px;
+    right: 0px;
+}
+
+/* TÉRMINO PRODUTO ASHE */
+
+.Tresh{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    color: #000000;
+    margin-left: 7%;
+    max-width: 300px;
+    width: 260px;
+    padding: 0px 60px 60px 20px;
+    border-radius: 0px 0px 40px 40px;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: inset 0px 0px 0px 0px blueviolet;
+    border: 1px solid #cacaca;
+    position: relative;
+    right: 93px;
+}
+.Tresh:hover, .Tresh:focus{
+    box-shadow: inset 0px 0px 0px 2px blueviolet;
+}
+.SetaParaMostrarTresh{
+    position: relative;
+    left: 280px;
+    top: 16px;
+}
+.ImagemDoTresh1{
+    width: 310px;
+    position: relative;
+    top: 5px;
+    padding-bottom: 5px;
+}
+.CorLetrasTresh1{
+    color: #000000;
+}
+.TituloTresh1{
+    font-family: 'Inter', sans-serif;
+    font-size: 20.5px;
+    color: rgb(0, 0, 0);
+}
+.PrecoAnterior{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+.PrecoNovo{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-left: 4px;
+}
+.De{
+    padding-top: 22px;
+    border-top: 2px solid rgb(117, 117, 117);
+    color: red;
+}
+.Por{
+    color: blueviolet;
+}
+.AVista{
+    padding-bottom: 26px;
+    border-bottom: 2px solid rgb(117, 117, 117);
+}
+.PrecoCartao{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+.SeisX{
+    color: blueviolet;
+}
+.Juros{
+    font-size: 12px;
+}
