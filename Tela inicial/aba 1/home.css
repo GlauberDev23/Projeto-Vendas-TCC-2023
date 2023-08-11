@@ -5,18 +5,25 @@
 body{
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
-.container{
+.container1{
     width: 100%;
     max-width: 5500px;
     padding: auto;
     margin: 0 auto;
+    /*Gambiarra*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 #header{
     background-color: blueviolet;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
 }
 .logo1{
     width: 180px;
@@ -87,33 +94,35 @@ a{
 }
 
 /*--------------------------------------------------------------*/
-
+.banner{
+    background-image: url("../assets/fotoLoL.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .titulo1{
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
-    position: relative;
-    top: -190px;
     display: flex;
     justify-content: center;
     max-width: 920px;
     padding: 20px;
-    margin-left: 16%;
     border-radius: 30px;
     background-color: blueviolet;
     color: #ffffff;
 }
-.fotoLOL{
-    width: 1366px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
 
-}
 .ofertadia{
     font-family: 'Inter', sans-serif;
     font-size: 40px; /* bug da tela pro lado */
     color: rgb(0, 0, 0);
-    margin-left: 7%;  
+    margin-left: 6%; 
+    margin-top: 3%; 
 }
 
 /* PRODUTO DO ZED */
@@ -123,13 +132,13 @@ a{
 .ProdutosDaOferta{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .Zed{
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     background-color: #f5f5f5;
     color: #000000;
-    margin-left: 7%;
     max-width: 300px;
     width: 260px;
     padding: 20px 0px 60px 20px;
@@ -211,8 +220,6 @@ a{
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;
     border: 1px solid #cacaca;
-    position: relative;
-    right: 46px;
 }
 .Ashe:hover, .Ashe:focus{
     box-shadow: inset 0px 0px 0px 2px blueviolet;
@@ -285,8 +292,6 @@ a{
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;
     border: 1px solid #cacaca;
-    position: relative;
-    right: 93px;
 }
 .Tresh:hover, .Tresh:focus{
     box-shadow: inset 0px 0px 0px 2px blueviolet;
