@@ -4,7 +4,7 @@
 }
 body{
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     overflow-x: hidden;
 }
 .container1{
@@ -133,6 +133,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 105px;
+    gap: 120px;
 }
 .Zed{
     font-family: 'Rubik', sans-serif;
@@ -212,7 +214,6 @@ a{
     font-size: 18px;
     background-color: #f5f5f5;
     color: #000000;
-    margin-left: 7%;
     max-width: 300px;
     width: 260px;
     padding: 20px 0px 55px 22px;
@@ -242,14 +243,17 @@ a{
     font-size: 22px;
     text-decoration: line-through;
     margin-left: 4px;
+    color: #000000;
 }
 .PrecoNovoAshe{
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     margin-left: 4px;
+    color: #000000;
 }
 .DeAshe{
-    padding-top: 22px;
+    max-width: 27px;
+    padding-top: 14px;
     border-top: 2px solid rgb(117, 117, 117);
     color: red;
 }
@@ -259,10 +263,12 @@ a{
 .AVistaAshe{
     padding-bottom: 26px;
     border-bottom: 2px solid rgb(117, 117, 117);
+    max-width: 55px;
 }
 .PrecoCartaoAshe{
     font-family: 'Inter', sans-serif;
     font-size: 20px;
+    color: #000000;
 }
 .SeisXAshe{
     color: blueviolet;
@@ -274,7 +280,6 @@ a{
     width: 200px;
     position: relative;
     top: 5px;
-    right: 0px;
 }
 
 /* TÉRMINO PRODUTO ASHE */
@@ -284,7 +289,6 @@ a{
     font-size: 18px;
     background-color: #f5f5f5;
     color: #000000;
-    margin-left: 7%;
     max-width: 300px;
     width: 260px;
     padding: 0px 60px 60px 20px;
@@ -312,39 +316,44 @@ a{
 }
 .TituloTresh1{
     font-family: 'Inter', sans-serif;
-    font-size: 20.5px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
 }
 .PrecoAnterior{
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     text-decoration: line-through;
-    margin-left: 4px;
+    color: #000000;
+    margin-left: 6px;
 }
 .PrecoNovo{
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     margin-left: 4px;
+    color: #000000;
 }
 .De{
-    padding-top: 22px;
-    border-top: 2px solid rgb(117, 117, 117);
+    padding-top: 9px;
+    border-top: 2px solid #7b7b7b;
+    max-width: 27px;
     color: red;
 }
 .Por{
     color: blueviolet;
 }
 .AVista{
-    padding-bottom: 26px;
-    border-bottom: 2px solid rgb(117, 117, 117);
+    padding-bottom: 23px;
+    border-bottom: 2px solid #7b7b7b;
+    max-width: 55px;
 }
 .PrecoCartao{
     font-family: 'Inter', sans-serif;
     font-size: 20px;
+    color: #000000;
 }
 .SeisX{
     color: blueviolet;
 }
 .Juros{
-    font-size: 12px;
+    font-size: 14px;
 }
