@@ -12,87 +12,63 @@ body{
     max-width: 5500px;
     padding: auto;
     margin: 0 auto;
-    /*Gambiarra*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 #header{
-    background-color: blueviolet;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    background-color: blueviolet;
 }
 .logo1{
-    width: 180px;
+    margin: 20px;
+    width: 200px;
+}
+#logoInput{
+    position: relative;
 }
 #input1{
     font-family: 'Inter', sans-serif;
-    position: absolute;
-    width: 260px;
-    height: 36px;
-    margin-left: 30px;
-    border: none;
     border-radius: 30px;
-    top: 27px;
-    padding-left: 14px;
+    border: none;
     outline: none;
-}
-#logoInput{
-    margin: 24px 40px;
-}
-li{
-    list-style: none;
+    width: 240px;
+    height: 36px;
+    padding-left: 16px;
+    font-size: 15px;
+    margin-left: 12px;
 }
 #menu1{
     font-family: 'Inter', sans-serif;
     display: flex;
-    justify-content: end;
     align-items: center;
-    gap: 32px;
-    margin: 20px 40px; 
+    gap: 35px;
+    margin: 20px 25px;
+    font-size: 17px;
 }
-
+.menuItem:hover{
+    color: #ffec44;
+}
+#logoInput{
+    display: flex;
+    align-items: center;
+}
+#elementosHeader{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 #lupa{
-    position: relative;
-    top: -9px;
-    left: 270px;
+    position: absolute;
     width: 20px;
+    right: 13px;
 }
-
-#home{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-#menuItem:hover{
-    color: #ffe675;
-}
-#casinha{
-    width: 24px;
-}
-#liquidacao{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-#compras{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-#perfil{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+li{
+    list-style: none;
 }
 a{
     color: #ffffff;
     text-decoration: none;
 }
-
 /*--------------------------------------------------------------*/
 .banner{
     background-image: url("../assets/fotoLoL.jpg");
@@ -116,25 +92,25 @@ a{
     background-color: blueviolet;
     color: #ffffff;
 }
-
+.conteudo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .ofertadia{
     font-family: 'Inter', sans-serif;
-    font-size: 40px; /* bug da tela pro lado */
+    font-size: 40px;
     color: rgb(0, 0, 0);
-    margin-left: 6%; 
-    margin-top: 3%; 
+    margin-top: 10%; 
 }
 
 /* PRODUTO DO ZED */
-.PassarParaOLadoOfertas{
-    width: 40px;
-}
 .ProdutosDaOferta{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 105px;
-    gap: 120px;
+    gap: 130px;
 }
 .Zed{
     font-family: 'Rubik', sans-serif;
@@ -143,7 +119,7 @@ a{
     color: #000000;
     max-width: 300px;
     width: 260px;
-    padding: 20px 0px 60px 20px;
+    padding: 20px 0px 64px 20px;
     border-radius: 0px 0px 40px 40px;
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;
@@ -151,11 +127,6 @@ a{
 }
 .Zed:hover, .Zed:focus{
     box-shadow: inset 0px 0px 0px 2px blueviolet;
-}
-.SetaParaMostrarZed{
-    position: relative;
-    left: 220px;
-    bottom: 4px;
 }
 .CorLetrasZed1{
     color: #000000;
@@ -170,15 +141,18 @@ a{
     font-size: 22px;
     text-decoration: line-through;
     margin-left: 4px;
+    color: #000000;
 }
 .PrecoNovoZed{
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     margin-left: 4px;
+    color: #000000;
 }
 .DeZed{
     padding-top: 22px;
     border-top: 2px solid rgb(117, 117, 117);
+    max-width: 27px;
     color: red;
 }
 .PorZed{
@@ -187,10 +161,12 @@ a{
 .AVistaZed{
     padding-bottom: 26px;
     border-bottom: 2px solid rgb(117, 117, 117);
+    max-width: 55px;
 }
 .PrecoCartaoZed{
     font-family: 'Inter', sans-serif;
     font-size: 20px;
+    color: #000000;
 }
 .SeisXZed{
     color: blueviolet;
@@ -216,7 +192,7 @@ a{
     color: #000000;
     max-width: 300px;
     width: 260px;
-    padding: 20px 0px 55px 22px;
+    padding: 20px 0px 70px 20px;
     border-radius: 0px 0px 40px 40px;
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;
@@ -224,11 +200,6 @@ a{
 }
 .Ashe:hover, .Ashe:focus{
     box-shadow: inset 0px 0px 0px 2px blueviolet;
-}
-.SetaParaMostrarAshe{
-    position: relative;
-    left: 220px;
-    bottom: 294px;
 }
 .CorLetrasAshe1{
     color: #000000;
@@ -277,9 +248,8 @@ a{
     font-size: 12px;
 }
 .ImagemDaAshe1{
-    width: 200px;
-    position: relative;
-    top: 5px;
+    width: 180px;
+    margin-left: 28px;
 }
 
 /* TÉRMINO PRODUTO ASHE */
@@ -291,7 +261,7 @@ a{
     color: #000000;
     max-width: 300px;
     width: 260px;
-    padding: 0px 60px 60px 20px;
+    padding: 12px 60px 62px 20px;
     border-radius: 0px 0px 40px 40px;
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;

@@ -7,13 +7,11 @@
 .T-ProdutosNovos{
     font-family: 'Inter', sans-serif;
     font-size: 26px;
-    color: rgb(0, 0, 0);
-    margin-left: 7%; 
+    color: rgb(0, 0, 0); 
 }
 .Mousepad{
     font-family: 'Inter', sans-serif;
     color: #000000;
-    
 }
 .IMG-mousepad{
     background-color: #f5f5f5;
@@ -193,45 +191,39 @@
     font-size: 13px;
 }
 /* Término Caderno Yasuo */
-.PassarParaOLadoAbaNovos{
-    position: relative;
-    right: -30px;
-}
 .ConteudoDosAvisos{
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-    margin-top: 3%;
-    line-height: 20px;
+    gap: 60px;
+    margin-top: 30px;
 }
 .Avisos1{
-    margin-top: 2%;
-    margin-left: 25%;
     border: 1px solid #cacaca;
     max-width: 968px;
-    padding: 0px 0px 50px 0px;
+    padding-bottom: 30px;
     border-radius: 20px;
 }
-.banner2{
-    background-image: url("../assets/WallpaperYasuoAviso.jpg");
+.video{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vh;
-    height: 96px;
+    width: 100vw;
+    width: 825px;
     border-radius: 20px;
     border-bottom: 1px solid #cacaca;
 }
 .Entrega{
-   margin-left: 2.5%;
+    position: relative;
+    bottom: 7px;
 }
 .IMG-Entrega{
-    margin-left: 35%;
+    margin-left: 83px;
 }
 .T-Entrega{
-    margin-left: 17%;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
+    margin-left: 42px;
 }
 .D-Entrega{
     color: #474747;
@@ -239,19 +231,13 @@
     font-family: 'Inter', sans-serif;
 }
 /* Entrega término */
-
-.Email{
-    position: relative;
-    top: 10px;
-    margin-left: 4.5%;
-}
 .IMG-Email{
-    margin-left: 32%;
+    margin-left: 98px;
 }
 .T-Email{
-    margin-left: 18%;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
+    margin-left: 58px;
 }
 .D-Email{
     color: #474747;
@@ -259,26 +245,19 @@
     font-family: 'Inter', sans-serif;
 }
 /* Email término */
-.Verificado{
-    position: relative;
-    top: 12px;
-    left: 67px;
-}
+
 .IMG-Verificado{
     width: 26px;
-    margin-left: 42%;
+    margin-left: 96px;
 }
 .T-Verificado{
-    margin-left: 18%;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
-    margin-top: 2%;
+    margin-left: 36px;
 }
 .D-Verificado{
     color: #474747;
     font-size: 15px;
-    position: relative;
-    left: 10px;
     font-family: 'Inter', sans-serif;
 }
 /* Aba esgotados */
@@ -286,19 +265,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .Esgotando{
     font-family: 'Inter', sans-serif;
     font-size: 26px;
     color: rgb(0, 0, 0);
-    margin-left: 7%;
-    margin-top: 5%;
+    margin-top: 20%;
 }
 .acabando{
     color: blueviolet;
 }
 .QuadroCho{
-    
     margin-top: 3%;
     border: 1px solid #e9e9e9;
     border-radius: 10px 10px 10px 10px;
