@@ -195,7 +195,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
     margin-top: 30px;
 }
 .Avisos1{
@@ -204,12 +204,10 @@
     padding-bottom: 30px;
     border-radius: 20px;
 }
-.video{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.AatroxAviso1{
     width: 100vw;
-    width: 825px;
+    width: 826px;
+    height: 140px;
     border-radius: 20px;
     border-bottom: 1px solid #cacaca;
 }
