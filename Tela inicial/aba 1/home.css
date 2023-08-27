@@ -113,6 +113,12 @@ a{
     justify-content: center;
     gap: 130px;
 }
+@media (max-width: 850px){
+    .ProdutosDaOferta{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .Zed{
     font-family: 'Rubik', sans-serif;
     font-size: 18px;

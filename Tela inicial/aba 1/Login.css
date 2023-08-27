@@ -48,6 +48,9 @@ body{
 .menuItem{
     color: #ffffff;
 }
+.menuItem:hover{
+    color: #ffec44;
+}
 #logoInput{
     display: flex;
     align-items: center;
@@ -68,6 +71,7 @@ li{
 a{
     text-decoration: none;
 }
+                                /* FIM DO HEADER */
 .login{
     display: flex;
     justify-content: center;
@@ -93,6 +97,11 @@ a{
     border-radius: 5px;
     padding: 6px;
     margin-bottom: 10px;
+    transition: 0.6s;
+}
+.entrarGoogle:hover{
+    background-color: rgb(132, 0, 255);
+    color: #ffffff;
 }
 .entrarFacebook{
     display: flex;
@@ -102,6 +111,11 @@ a{
     border-radius: 5px;
     padding: 6px;
     margin-bottom: 10px;
+    transition: 0.6s;
+}
+.entrarFacebook:hover{
+    background-color: rgb(132, 0, 255);
+    color: #ffffff;
 }
 .ouLogin{
     display: flex;
@@ -139,12 +153,23 @@ a{
     line-height: 25px;
 }
 .senhaEsquecida{
+    font-family: 'Rubik', sans-serif;
     display: flex;
     justify-content: center;
     color: blueviolet;
     margin-top: 10px;
 }
+.senhaEsquecida:hover{
+    color: rgb(47, 0, 92);
+}
 .novoUsuario{
+    font-family: 'Rubik', sans-serif;
     display: flex;
     justify-content: center;
+}
+.criarConta{
+    color: blueviolet;
+}
+.criarConta:hover{
+    color: rgb(47, 0, 92);
 }
