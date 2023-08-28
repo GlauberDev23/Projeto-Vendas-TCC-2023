@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="Conta.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet">
-    <title>Login - B-NASHOR</title>
+    <title>Criar conta - B-NASHOR</title>
 </head>
 <body>
     <div class="container1">
@@ -49,40 +49,25 @@
             </ul>
         </div>
         </nav>
+    </section>
 
-        <section class="login">
-            <div class="criandoLogin">
-               <p class="tituloLogin">Que bom ter você de volta ! </p>
-               <div class="sessaoGoogle">
-                    <a href="https://accounts.google.com/" target="_blank" class="entrarGoogle">
-                    <img src="../assets/google.png" alt="Entrar com a conta Google" class="fotoGoogle">
-                    <p>Continuar com o Google</p>
-                    </a>
+        <section class="conta">
+            <div class="criandoConta">
+                <p class="tituloConta">Cadastro</p>
+                <div class="sessaoCriar">
+                    <input type="text" placeholder="Nome completo" class="inputNome"><br>
+                    <input type="text" placeholder="Nome de Usuário" class="inputUsuario"><br>
+                    <input type="number" placeholder="Telefone" maxlength="10" class="inputTelefone"><br>
+                    <input type="date" class="inputData"><br>
+                    <input type="number" placeholder="CPF" class="inputCpf"><br>
+                    <input type="text" placeholder="Email" class="inputEmail"><br>
+                    <input type="text" placeholder="Senha" class="inputSenha"><br>
+                    <p class="termosDeUso">Eu li e concordo com os termos de uso <input class="checkBox" type="checkbox"></p>
+                    <button class="botaoCriar">Criar Conta</button>
+
+                    <p class="loginFeito">Já é um usuário? <a href="Login.html" class="entrar">Entrar</a></p>
                 </div>
-                <div class="sessaoFacebook">
-                    <a href="https://www.facebook.com/" target="_blank" class="entrarFacebook">
-                    <img src="../assets/facebook.png" alt="Entrar com a conta Facebook" class="fotoFacebook">
-                    <p>Continuar com o Facebook</p>
-                    </a>
-                </div>
-
-                <p class="ouLogin">ou</p>
-
-                <div class="sessaoEntrarInput">
-                    <input type="text" class="emailUsuario" placeholder="Email">
-                <br>
-                    <input type="password" class="senhaUsuario" placeholder="Senha">
-                <br>
-                    <button class="botaoEntrar">Entrar</button>
-                <div class="outraSessao">
-                    <a href="#" class="senhaEsquecida">
-                        <p>Esqueci a senha</p>
-                    </a>
-                    <p class="novoUsuario">Novo aqui? <a href="Conta.html">Criar conta</a></p>
-                </div>    
-                </div>    
             </div>
         </section>
-    </section>
 </div>
 </body>
