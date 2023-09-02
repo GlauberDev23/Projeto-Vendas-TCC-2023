@@ -80,6 +80,17 @@ a{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.setaVoltarLogin{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    max-width: 215px;
+    gap: 10px;
+    font-size: 20px;
+    color: blueviolet;
+    cursor: pointer;
+}
 .criandoLogin{
     font-family: 'Inter', sans-serif;
     border-radius: 20px;
@@ -164,6 +175,7 @@ a{
     margin-top: 10px;
 }
 .botaoEntrar{
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     margin-top: 16px;
@@ -179,6 +191,7 @@ a{
 .botaoEntrar:hover{
     color: #ffffff;
     background-color: blueviolet;
+    cursor: pointer;
 }
 .novoUsuario{
     font-family: 'Rubik', sans-serif;
@@ -186,5 +199,6 @@ a{
     justify-content: center;
 }
 .criarConta{
+    margin-left: 3px;
     color: blueviolet;
 }

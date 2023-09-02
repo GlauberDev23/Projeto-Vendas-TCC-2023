@@ -75,8 +75,21 @@ a{
 .conta{
     display: flex;
     justify-content: center;
-    margin-top: 130px;
-    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.setaVoltarCadastro{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    max-width: 215px;
+    gap: 10px;
+    font-size: 20px;
+    color: blueviolet;
+    cursor: pointer;
 }
 .criandoConta{
     font-family: 'Inter', sans-serif;
@@ -180,4 +193,8 @@ a{
     font-size: 15px;
     display: flex;
     justify-content: center;
+}
+.entrar{
+    color: blueviolet;
+    margin-left: 3px;
 }

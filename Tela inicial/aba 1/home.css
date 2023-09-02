@@ -836,26 +836,66 @@ a{
     font-size: 13px;
 }
 
-                                    /* rodapé */
+/* rodapé */
+
 .rodape{
-    background-color: blueviolet;
+    background-image: linear-gradient(90deg, blueviolet, rgb(150, 0, 0));
     width: 100vw;
-    height: 400px;
+    max-height: 100vh;
 }
-.logoRodape{
-    width: 180px;
-}
-.titulosRodape{
+.conteudoRodape{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
-.menuRodape{
-    font-family: 'Inter', sans-serif;
+.redesFooter{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.whatsappFooter{
+    width: 45px;
+    transition: transform 0.3s;
+}
+.whatsappFooter:hover{
+    transform: scale(1.3);
+}
+.facebookFooter{
+    width: 45px;
+    transition: transform 0.3s;
+}
+.facebookFooter:hover{
+    transform: scale(1.3);
+}
+.instagramFooter{
+    width: 45px;
+    transition: transform 0.3s;
+}
+.instagramFooter:hover{
+    transform: scale(1.3);
+}
+.menuItemFooter{
+    font-family: 'Inter', 'sans-serif';
     font-size: 20px;
     display: flex;
-    color: #ffffff;
-    margin-right: 100px;
-    gap: 50px;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 27px;
 }
-
+.direitosAutorais{
+    font-family: 'Inter', 'sans-serif';
+    font-size: 13px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 102.5px;
+}
+.yasuoFooter{
+    height: 320px;
+}                                  
+.yoneFooter{
+    position: relative;
+    right: 15px;
+    height: 320px;
+}  
