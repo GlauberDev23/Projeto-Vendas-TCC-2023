@@ -9,7 +9,7 @@ body{
 }
 .container1{
     width: 100%;
-    max-width: 5500px;
+    max-width: 5200px;
     padding: auto;
     margin: 0 auto;
 }
@@ -56,10 +56,6 @@ body{
     display: flex;
     align-items: center;
     gap: 6px;
-    transition: transform 0.4s;
-}
-#elementosHeader:hover{
-    transform: scale(0.9);
 }
 #lupa{
     position: absolute;
@@ -139,47 +135,47 @@ a{
 .Zed:hover, .Zed:focus{
     box-shadow: inset 0px 0px 0px 2px blueviolet;
 }
-.TituloZed1{
+.Titulo1{
     font-family: 'Inter', sans-serif;
     font-size: 20.5px;
     color: rgb(0, 0, 0);
 }
-.PrecoAnteriorZed{
+.PrecoAnterior{
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     text-decoration: line-through;
     margin-left: 4px;
     color: #000000;
 }
-.PrecoNovoZed{
+.PrecoNovo{
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     margin-left: 4px;
     color: #000000;
 }
-.DeZed{
+.De{
     padding-top: 22px;
     border-top: 2px solid rgb(117, 117, 117);
     max-width: 27px;
     color: red;
 }
-.PorZed{
+.Por{
     color: blueviolet;
 }
-.AVistaZed{
+.AVista{
     padding-bottom: 26px;
     border-bottom: 2px solid rgb(117, 117, 117);
     max-width: 55px;
 }
-.PrecoCartaoZed{
+.PrecoCartao{
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: #000000;
 }
-.SeisXZed{
+.SeisX{
     color: blueviolet;
 }
-.JurosZed{
+.Juros{
     font-size: 12px;
 }
 .ImagemDoZed1{
@@ -190,54 +186,71 @@ a{
 }
 .dialogZed{
     font-family: 'Inter', sans-serif;
-    max-width: 80vw;
-    width: 60%;
-    max-height: 33vw;
-    height: 33%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
     border: none;
     border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
 }   
-.modalZed{
-    background-color: #f5f5f5;
-    border:none;
-    border-radius: 10px;
-    position: absolute;
-    width: 300px;
+.dialogZed:hover{
+    transform: scale(1.02);
+}
+.dialogZed::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.conteudoModal{
+    display: flex;
     margin: 10px 10px;
 }
-.infoZed{
+.modal{
+    background-color: #e0e0e0;
+    border:none;
+    border-radius: 10px;
+    width: 270px;
+}
+.info{
     display: flex;
     justify-content: center;
-    margin-top: 27px;
+    margin-left: 20px;
 }
-.tituloModalZed{
+.tituloModal{
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    margin-top: 8px;
 }
-.estrelasZed{
+.estrelas{
     margin-left: 5px;
     margin-right: 5px;
 }
-.avaliacaoModalZed{
-    background-color: #e9e9e9;
-    max-height: 40px;
+.avaliacaoModal{
+    background-color: #e0e0e0;
+    max-width: 400px;
+    height: 40px;
     border-radius: 10px;
     padding-left: 12px;
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
+    margin-bottom: 17px;
 }
-.precoModalZed{
+.precoModal{
     font-size: 23px;
-    margin-top: 17px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: baseline;
 }
-.freteModalZed{
+.parcelaModal{
+    margin-left: 6px;
+    font-size: 15px;
+}
+.freteModal{
     display: flex;
     align-items: center;
-    margin-top: 10px;
 }
 .tituloFrete{
     margin-left: 5px;
@@ -247,17 +260,15 @@ a{
 }
 .prazoEntrega{
     font-size: 13px;
-}
-.botoesComprar{
-    margin-top: 27px;
+    margin-bottom: 17px;
 }
 .adicionarCarrinho{
-    background-color: #e9e9e9;
-    border: 1px solid #cacaca;
+    background-color: #e0e0e0;
+    border: 1px solid #b4b4b4;
     padding: 16px;
     border-radius: 10px;
     font-size: 15px;
-    transition: transform 0.3s;
+    transition: transform 0.15s;
 }
 .adicionarCarrinho:hover{
     transform: scale(0.97);
@@ -266,16 +277,17 @@ a{
     cursor: pointer;
 }
 .comprarAgora{
-    background-color: #e9e9e9;
-    border: 1px solid #cacaca;
+    background-color: #e0e0e0;
+    border: 1px solid #b4b4b4;
     padding: 16px;
     width: 180px;
     border-radius: 10px;
     font-size: 15px;
-    transition: 0.4s;
     margin-left: 5px;
+    transition: transform 0.15s;
 }
 .comprarAgora:hover{
+    transform: scale(0.97);
     background-color: blueviolet;
     color: white;
     cursor: pointer;
@@ -307,55 +319,10 @@ a{
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;
     border: 1px solid #cacaca;
+    cursor: pointer;
 }
 .Ashe:hover, .Ashe:focus{
     box-shadow: inset 0px 0px 0px 2px blueviolet;
-}
-.CorLetrasAshe1{
-    color: #000000;
-}
-.TituloAshe1{
-    font-family: 'Inter', sans-serif;
-    font-size: 20.5px;
-    color: rgb(0, 0, 0);
-}
-.PrecoAnteriorAshe{
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    text-decoration: line-through;
-    margin-left: 4px;
-    color: #000000;
-}
-.PrecoNovoAshe{
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-    margin-left: 4px;
-    color: #000000;
-}
-.DeAshe{
-    max-width: 27px;
-    padding-top: 14px;
-    border-top: 2px solid rgb(117, 117, 117);
-    color: red;
-}
-.PorAshe{
-    color: blueviolet;
-}
-.AVistaAshe{
-    padding-bottom: 26px;
-    border-bottom: 2px solid rgb(117, 117, 117);
-    max-width: 55px;
-}
-.PrecoCartaoAshe{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    color: #000000;
-}
-.SeisXAshe{
-    color: blueviolet;
-}
-.JurosAshe{
-    font-size: 12px;
 }
 .ImagemDaAshe1{
     width: 180px;
@@ -363,58 +330,27 @@ a{
 } 
 .dialogAshe{
     font-family: 'Inter', sans-serif;
-    max-width: 80vw;
-    width: 60%;
-    max-height: 33vw;
-    height: 33%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
     border: none;
     border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
 }   
-.modalAshe{
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    position: absolute;
-    width: 290px;
-    margin: 15px 15px;
+.dialogAshe:hover{
+    transform: scale(1.02);
 }
-.infoAshe{
-    display: flex;
-    justify-content: center;
-    margin-top: 17px;
-}
-.tituloModalAshe{
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-.estrelasAshe{
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.avaliacaoModalAshe{
-    background-color: #e9e9e9;
-    max-height: 40px;
-    border-radius: 10px;
-    padding-left: 12px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-.precoModalAshe{
-    font-size: 23px;
-    margin-top: 17px;
-    margin-bottom: 8px;
-}
-.parcelaModalAshe{
-    font-size: 15px;
-    margin-top: 2px;
+.dialogAshe::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
 }
 .freteModalAshe{
     display: flex;
     align-items: center;
-    margin-top: 10px;
 }
 .fecharModalAshe{
     font-size: 20px;
@@ -429,7 +365,7 @@ a{
 }
 /* TÉRMINO PRODUTO ASHE */
 
-.Tresh{
+.Thresh{
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     background-color: #f5f5f5;
@@ -441,68 +377,60 @@ a{
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;
     border: 1px solid #cacaca;
+    cursor: pointer;
 }
-.Tresh:hover, .Tresh:focus{
+.Thresh:hover, .Thresh:focus{
     box-shadow: inset 0px 0px 0px 2px blueviolet;
 }
-.SetaParaMostrarTresh{
-    position: relative;
-    left: 280px;
-    top: 16px;
-}
-.ImagemDoTresh1{
+.ImagemDoThresh1{
     width: 310px;
     position: relative;
     top: 5px;
     padding-bottom: 5px;
 }
-.CorLetrasTresh1{
-    color: #000000;
-}
-.TituloTresh1{
+
+.dialogThresh{
     font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogThresh:hover{
+    transform: scale(1.02);
+}
+.dialogThresh::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+} 
+.modalThresh{
+    background-color: #e0e0e0;
+    border:none;
+    border-radius: 10px;
+    width: 280px;
+}
+.fecharModalThresh{
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
 }
-.PrecoAnterior{
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    text-decoration: line-through;
-    color: #000000;
-    margin-left: 6px;
+.fecharModalThresh:hover{
+    transform: scale(0.8);
 }
-.PrecoNovo{
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-    margin-left: 4px;
-    color: #000000;
-}
-.De{
-    padding-top: 9px;
-    border-top: 2px solid #7b7b7b;
-    max-width: 27px;
-    color: red;
-}
-.Por{
-    color: blueviolet;
-}
-.AVista{
-    padding-bottom: 23px;
-    border-bottom: 2px solid #7b7b7b;
-    max-width: 55px;
-}
-.PrecoCartao{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    color: #000000;
-}
-.SeisX{
-    color: blueviolet;
-}
-.Juros{
-    font-size: 14px;
-}
+
+/* CONTEUDO DA ABA NOVOS */
+
 .AbaNovos{
+    font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -520,187 +448,218 @@ a{
     color: rgb(0, 0, 0); 
 }
 .Mousepad{
-    font-family: 'Inter', sans-serif;
-    color: #000000;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #e9e9e9;
+    cursor: pointer;
 }
-.IMG-mousepad{
-    background-color: #f5f5f5;
-    border: 1px solid rgb(235, 235, 235);
+.IMG-AbaNovos{
     width: 270px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e9e9e9;
     border-radius: 10px 10px 0px 0px;
     box-shadow: inset 0px 0px 0px 0px blueviolet;
     transition: box-shadow 0.2s ease-in-out;
 }
-.IMG-mousepad:hover, .IMG-mousepad:focus{
+.IMG-AbaNovos:hover, .IMG-AbaNovos:focus{
     box-shadow: inset 0px 4px 0px 0px blueviolet;
 }
-.InfoMousePad{
-    position: relative;
-    bottom: 5px;
-    border: 1px solid rgb(235, 235, 235);
+.InfoAbaNovos{
     padding: 10px 0px 50px 10px;
     border-radius: 0px 0px 10px 10px;
 }
-.CorLetrasMousePad{
+.CorLetrasAbaNovos{
     color: black;
 }
-.PrecoMousepad{
+.PrecoAbaNovos{
     font-size: 25px;
 }
-.AVistaMousepad{
+.AVistaAbaNovos{
     color: blueviolet;
     font-size: 13.5px;
 }
-.SeisXMousepad{
+.SeisXAbaNovos{
     font-size: 14px;
 }
-.CartaoMousepad{
+.CartaoAbaNovos{
     font-size: 17px;
 }
-.JurosMousepad{
+.JurosAbaNovos{
     color: blueviolet;
     font-size: 13px;
+}
+.dialogMousepad{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogMousepad:hover{
+    transform: scale(1.02);
+}
+.dialogMousepad::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.tituloModalMousepad{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.freteModalMousepad{
+    display: flex;
+    align-items: center;
+}
+.fecharModalMousepad{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalMousepad:hover{
+    transform: scale(0.8);
 }
 /* Draven Boneco */
 
 .DravenBoneco{
-    position: relative;
-    bottom: 2px;
-    border: 1px solid #e9e9e9;
     border-radius: 10px 10px 10px 10px;
-    padding: 0px 0px 80px 0px;
+    border: 1px solid #e9e9e9;
+    padding: 0px 0px 20px 0px;
+    cursor: pointer;
 }
-.IMG-DravenBoneco{
-    width: 270px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: inset 0px 0px 0px 0px blueviolet;
-    transition: box-shadow 0.2s ease-in-out;
-}
-.IMG-DravenBoneco:hover, .IMG-DravenBoneco:focus{
-    box-shadow: inset 0px 4px 0px 0px blueviolet;
-}
-.InfoDravenBoneco{
+.dialogDraven{
     font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 5px;
-    left: 10px;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogDraven:hover{
+    transform: scale(1.02);
 }
-.CorLetrasDravenBoneco{
-    color: black;
+.dialogDraven::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
 }
-.PrecoDravenBoneco{
-    font-size: 25px;
+.freteModalDraven{
+    display: flex;
+    align-items: center;
 }
-.AVistaDravenBoneco{
-    color: blueviolet;
-    font-size: 13.5px;
+.fecharModalDraven{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
 }
-.SeisXDravenBoneco{
-    font-size: 14px;
-}
-.CartaoDravenBoneco{
-    font-size: 17px;
-}
-.JurosDravenBoneco{
-    color: blueviolet;
-    font-size: 13px;
+.fecharModalDraven:hover{
+    transform: scale(0.8);
 }
 /* Término boneco do Draven */
+
 /* Boneco do Blitz */
 .BlitzcrankBoneco{
-    position: relative;
-    bottom: 2px;
     border: 1px solid #e9e9e9;
     border-radius: 10px 10px 10px 10px;
-    padding: 0px 0px 80px 0px;
+    padding: 0px 0px 20px 0px;
+    cursor: pointer;
 }
-.IMG-BlitzcrankBoneco{
-    width: 270px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: inset 0px 0px 0px 0px blueviolet;
-    transition: box-shadow 0.2s ease-in-out;
-}
-.IMG-BlitzcrankBoneco:hover, .IMG-BlitzcrankBoneco:focus{
-    box-shadow: inset 0px 4px 0px 0px blueviolet;
-}
-.InfoBlitzcrankBoneco{
+.dialogBlitz{
     font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 5px;
-    left: 10px;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogBlitz:hover{
+    transform: scale(1.02);
 }
-.CorLetrasBlitzcrankBoneco{
-    color: black;
+.dialogBlitz::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
 }
-.PrecoBlitzcrankBoneco{
-    font-size: 25px;
+.freteModalBlitz{
+    display: flex;
+    align-items: center;
 }
-.AVistaBlitzcrankBoneco{
-    color: blueviolet;
-    font-size: 13.5px;
+.fecharModalBlitz{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
 }
-.SeisXBlitzcrankBoneco{
-    font-size: 14px;
+.fecharModalBlitz:hover{
+    transform: scale(0.8);
 }
-.CartaoBlitzcrankBoneco{
-    font-size: 17px;
-}
-.JurosBlitzcrankBoneco{
-    color: blueviolet;
-    font-size: 13px;
-}
+
 /* Término Blitz boneco */
+
 /* Caderno do Yasuo */
 .CadernoYasuo{
-    position: relative;
-    bottom: 2px;
     border: 1px solid #e9e9e9;
     border-radius: 10px 10px 10px 10px;
-    padding: 0px 0px 80px 0px;
+    padding: 0px 0px 20px 0px;
+    cursor: pointer;
 }
-.IMG-CadernoYasuo{
-    width: 270px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: inset 0px 0px 0px 0px blueviolet;
-    transition: box-shadow 0.2s ease-in-out;
-    
-}
-.IMG-CadernoYasuo:hover, .IMG-CadernoYasuo:focus{
-    box-shadow: inset 0px 4px 0px 0px blueviolet;
-}
-.InfoCadernoYasuo{
+.dialogYasuo{
     font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 5px;
-    left: 10px;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogYasuo:hover{
+    transform: scale(1.02);
 }
-.CorLetrasCadernoYasuo{
-    color: black;
+.dialogYasuo::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
 }
-.PrecoCadernoYasuo{
-    font-size: 25px;
+.freteModalYasuo{
+    display: flex;
+    align-items: center;
 }
-.AVistaCadernoYasuo{
-    color: blueviolet;
-    font-size: 13.5px;
+.fecharModalYasuo{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
 }
-.SeisXCadernoYasuo{
-    font-size: 14px;
-}
-.CartaoCadernoYasuo{
-    font-size: 17px;
-}
-.JurosCadernoYasuo{
-    color: blueviolet;
-    font-size: 13px;
+.fecharModalYasuo:hover{
+    transform: scale(0.8);
 }
 /* Término Caderno Yasuo */
+
 .ConteudoDosAvisos{
     display: flex;
     justify-content: center;
@@ -776,6 +735,7 @@ a{
 }
                                     /* Aba esgotados */
 .AbaEsgotando{
+    font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -790,13 +750,13 @@ a{
 .acabando{
     color: blueviolet;
 }
-.QuadroCho{
+.QuadroThresh{
     margin-top: 3%;
     border: 1px solid #e9e9e9;
     border-radius: 10px 10px 10px 10px;
     padding: 0px 0px 60px 0px;
 }
-.IMG-QuadroCho{
+.IMG-AbaEsgotando{
     width: 270px;
     background-color: #f5f5f5;
     border-bottom: 1px solid #e9e9e9;
@@ -804,33 +764,77 @@ a{
     box-shadow: inset 0px 0px 0px 0px blueviolet;
     transition: box-shadow 0.2s ease-in-out;
 }
-.IMG-QuadroCho:hover, .IMG-QuadroCho:focus{
+.IMG-AbaEsgotando:hover, .IMG-AbaEsgotando:focus{
     box-shadow: inset 0px 4px 0px 0px blueviolet;
 }
-.InfoQuadroCho{
+.InfoAbaEsgotando{
     font-family: 'Inter', sans-serif;
     margin-top: 5px;
     margin-left: 10px;
 }
-.CorLetrasQuadroCho{
+.CorLetrasAbaEsgotando{
     color: black;
 }
-.PrecoQuadroCho{
+.PrecoAbaEsgotando{
     font-size: 25px;
 }
-.AVistaQuadroCho{
+.AVistaAbaEsgotando{
     color: blueviolet;
     font-size: 13.5px;
 }
-.SeisXQuadroCho{
+.SeisXAbaEsgotando{
     font-size: 14px;
 }
-.CartaoQuadroCho{
+.CartaoAbaEsgotando{
     font-size: 17px;
 }
-.JurosQuadroCho{
+.JurosAbaEsgotando{
     color: blueviolet;
     font-size: 13px;
+}
+
+                                    /* quadro do Thresh */
+.QuadroThresh{
+    margin-top: 3%;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 0px 60px 0px;
+    cursor: pointer;
+}   
+.dialogQuadroThresh{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogQuadroThresh:hover{
+    transform: scale(1.02);
+}
+.dialogQuadroThresh::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalQuadroThresh{
+    display: flex;
+    align-items: center;
+}
+.fecharModalQuadroThresh{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalQuadroThresh:hover{
+    transform: scale(0.8);
 }
                     /* Quadro dos Kindred */
 .QuadroKindred{
@@ -838,85 +842,85 @@ a{
     border: 1px solid #e9e9e9;
     border-radius: 10px 10px 10px 10px;
     padding: 0px 0px 60px 0px;
+    cursor: pointer;
 }
-.IMG-QuadroKindred{
-    width: 270px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: inset 0px 0px 0px 0px blueviolet;
-    transition: box-shadow 0.2s ease-in-out;
-}
-.IMG-QuadroKindred:hover, .IMG-QuadroKindred:focus{
-    box-shadow: inset 0px 4px 0px 0px blueviolet;
-}
-.InfoQuadroKindred{
+.dialogQuadroKindred{
     font-family: 'Inter', sans-serif;
-    margin-top: 5px;
-    margin-left: 10px;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogQuadroKindred:hover{
+    transform: scale(1.02);
 }
-.CorLetrasQuadroKindred{
-    color: black;
+.dialogQuadroKindred::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
 }
-.PrecoQuadroKindred{
-    font-size: 25px;
+.freteModalQuadroKindred{
+    display: flex;
+    align-items: center;
 }
-.AVistaQuadroKindred{
-    color: blueviolet;
-    font-size: 13.5px;
+.fecharModalQuadroKindred{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
 }
-.SeisXQuadroKindred{
-    font-size: 14px;
+.fecharModalQuadroKindred:hover{
+    transform: scale(0.8);
 }
-.CartaoQuadroKindred{
-    font-size: 17px;
-}
-.JurosQuadroKindred{
-    color: blueviolet;
-    font-size: 13px;
-}
-                            /* Quadro do Yasuo */
+                            /* Quadro da Vi*/
 .QuadroVi{
     margin-top: 3%;
     border: 1px solid #e9e9e9;
     border-radius: 10px 10px 10px 10px;
     padding: 0px 0px 60px 0px;
+    cursor: pointer;
 }
-.IMG-QuadroVi{
-    width: 270px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: inset 0px 0px 0px 0px blueviolet;
-    transition: box-shadow 0.2s ease-in-out;
-}
-.IMG-QuadroVi:hover, .IMG-QuadroVi:focus{
-    box-shadow: inset 0px 4px 0px 0px blueviolet;
-}
-.InfoQuadroVi{
+.dialogQuadroVi{
     font-family: 'Inter', sans-serif;
-    margin-top: 5px;
-    margin-left: 10px;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogQuadroVi:hover{
+    transform: scale(1.02);
 }
-.CorLetrasQuadroVi{
-    color: black;
+.dialogQuadroVi::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
 }
-.PrecoQuadroVi{
-    font-size: 25px;
+.freteModalQuadroVi{
+    display: flex;
+    align-items: center;
 }
-.AVistaQuadroVi{
-    color: blueviolet;
-    font-size: 13.5px;
+.fecharModalQuadroVi{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
 }
-.SeisXQuadroVi{
-    font-size: 14px;
-}
-.CartaoQuadroVi{
-    font-size: 17px;
-}
-.JurosQuadroVi{
-    color: blueviolet;
-    font-size: 13px;
+.fecharModalQuadroVi:hover{
+    transform: scale(0.8);
 }
                             /* Quadro do Kassadin */
 .QuadroKassadin{
@@ -924,95 +928,51 @@ a{
     border: 1px solid #e9e9e9;
     border-radius: 10px 10px 10px 10px;
     padding: 0px 0px 60px 0px;
+    cursor: pointer;
 }
-.IMG-QuadroKassadin{
-    width: 270px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: inset 0px 0px 0px 0px blueviolet;
-    transition: box-shadow 0.2s ease-in-out;
-}
-.IMG-QuadroKassadin:hover, .IMG-QuadroKassadin:focus{
-    box-shadow: inset 0px 4px 0px 0px blueviolet;
-}
-.InfoQuadroKassadin{
+.dialogQuadroKassadin{
     font-family: 'Inter', sans-serif;
-    margin-top: 5px;
-    margin-left: 10px;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogQuadroKassadin:hover{
+    transform: scale(1.02);
 }
-.CorLetrasQuadroKassadin{
-    color: black;
+.dialogQuadroKassadin::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
 }
-.PrecoQuadroKassadin{
-    font-size: 25px;
+.freteModalQuadroKassadin{
+    display: flex;
+    align-items: center;
 }
-.AVistaQuadroKassadin{
-    color: blueviolet;
-    font-size: 13.5px;
+.fecharModalQuadroKassadin{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
 }
-.SeisXQuadroKassadin{
-    font-size: 14px;
-}
-.CartaoQuadroKassadin{
-    font-size: 17px;
-}
-.JurosQuadroKassadin{
-    color: blueviolet;
-    font-size: 13px;
-}
-                        /* quadro do Thresh */
-.QuadroThresh{
-    margin-top: 3%;
-    border: 1px solid #e9e9e9;
-    border-radius: 10px 10px 10px 10px;
-    padding: 0px 0px 60px 0px;
-}
-.IMG-QuadroThresh{
-    width: 270px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #e9e9e9;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: inset 0px 0px 0px 0px blueviolet;
-    transition: box-shadow 0.2s ease-in-out;
-}
-.IMG-QuadroThresh:hover, .IMG-QuadroThresh:focus{
-    box-shadow: inset 0px 4px 0px 0px blueviolet;
-}
-.InfoQuadroThresh{
-    font-family: 'Inter', sans-serif;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-.CorLetrasQuadroThresh{
-    color: black;
-}
-.PrecoQuadroThresh{
-    font-size: 25px;
-}
-.AVistaQuadroThresh{
-    color: blueviolet;
-    font-size: 13.5px;
-}
-.SeisXQuadroThresh{
-    font-size: 14px;
-}
-.CartaoQuadroThresh{
-    font-size: 17px;
-}
-.JurosQuadroThresh{
-    color: blueviolet;
-    font-size: 13px;
-}
-
-/* rodapé */
-
+.fecharModalQuadroKassadin:hover{
+    transform: scale(0.8);
+}                        
+                                    /* rodapé */
 .rodape{
     background-image: linear-gradient(90deg, blueviolet, rgb(150, 0, 0));
     width: 100vw;
     max-height: 100vh;
 }
 .conteudoRodape{
+    margin-left: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1062,9 +1022,10 @@ a{
 }
 .yasuoFooter{
     height: 320px;
+    position: relative;
+    right: 14px;
 }                                  
 .yoneFooter{
-    position: relative;
-    right: 15px;
     height: 320px;
+    margin-right: 15.5px;
 }  
