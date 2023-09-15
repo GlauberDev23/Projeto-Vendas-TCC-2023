@@ -189,7 +189,7 @@ a{
     position: fixed;
     top: 27%;
     left: 14%;
-    width: 74%;
+    width: 75vw;
     min-width: 800px;
     height: 45%;
     border: none;
@@ -438,7 +438,13 @@ a{
 @media (max-width: 850px){
     .AbaNovos{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 450px){
+        .AbaNovos{
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 .T-ProdutosNovos{
@@ -606,6 +612,12 @@ a{
 .freteModalBlitz{
     display: flex;
     align-items: center;
+}
+.modalBlitz{
+    background-color: #e0e0e0;
+    border:none;
+    border-radius: 10px;
+    width: 73%;
 }
 .fecharModalBlitz{
     font-size: 20px;
