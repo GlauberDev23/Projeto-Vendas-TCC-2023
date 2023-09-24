@@ -1,0 +1,237 @@
+.AbaEsgotando{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media (max-width: 1000px){
+    .AbaEsgotando{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.Esgotando{
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    margin-top: 20%;
+}
+.acabando{
+    color: blueviolet;
+}
+.QuadroThresh{
+    margin-top: 3%;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 0px 60px 0px;
+}
+.IMG-AbaEsgotando{
+    width: 270px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e9e9e9;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: inset 0px 0px 0px 0px blueviolet;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.IMG-AbaEsgotando:hover, .IMG-AbaEsgotando:focus{
+    box-shadow: inset 0px 4px 0px 0px blueviolet;
+}
+.InfoAbaEsgotando{
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.CorLetrasAbaEsgotando{
+    color: black;
+}
+.PrecoAbaEsgotando{
+    font-size: 25px;
+}
+.AVistaAbaEsgotando{
+    color: blueviolet;
+    font-size: 13.5px;
+}
+.SeisXAbaEsgotando{
+    font-size: 14px;
+}
+.CartaoAbaEsgotando{
+    font-size: 17px;
+}
+.JurosAbaEsgotando{
+    color: blueviolet;
+    font-size: 13px;
+}
+
+                                    /* quadro do Thresh */
+.QuadroThresh{
+    margin-top: 3%;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 0px 60px 0px;
+    cursor: pointer;
+}   
+.dialogQuadroThresh{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogQuadroThresh:hover{
+    transform: scale(1.02);
+}
+.dialogQuadroThresh::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalQuadroThresh{
+    display: flex;
+    align-items: center;
+}
+.fecharModalQuadroThresh{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalQuadroThresh:hover{
+    transform: scale(0.8);
+}
+                    /* Quadro dos Kindred */
+.QuadroKindred{
+    margin-top: 3%;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 0px 60px 0px;
+    cursor: pointer;
+}
+.dialogQuadroKindred{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogQuadroKindred:hover{
+    transform: scale(1.02);
+}
+.dialogQuadroKindred::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalQuadroKindred{
+    display: flex;
+    align-items: center;
+}
+.fecharModalQuadroKindred{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalQuadroKindred:hover{
+    transform: scale(0.8);
+}
+                            /* Quadro da Vi*/
+.QuadroVi{
+    margin-top: 3%;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 0px 60px 0px;
+    cursor: pointer;
+}
+.dialogQuadroVi{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogQuadroVi:hover{
+    transform: scale(1.02);
+}
+.dialogQuadroVi::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalQuadroVi{
+    display: flex;
+    align-items: center;
+}
+.fecharModalQuadroVi{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalQuadroVi:hover{
+    transform: scale(0.8);
+}
+                            /* Quadro do Kassadin */
+.QuadroKassadin{
+    margin-top: 3%;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 0px 60px 0px;
+    cursor: pointer;
+}
+.dialogQuadroKassadin{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogQuadroKassadin:hover{
+    transform: scale(1.02);
+}
+.dialogQuadroKassadin::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalQuadroKassadin{
+    display: flex;
+    align-items: center;
+}
+.fecharModalQuadroKassadin{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalQuadroKassadin:hover{
+    transform: scale(0.8);
+}

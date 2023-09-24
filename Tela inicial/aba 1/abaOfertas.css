@@ -1,0 +1,423 @@
+.ProdutosDaOferta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+.ofertadia{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-top: 10%; 
+}
+@media (max-width: 850px){
+    .ProdutosDaOferta{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.Zed{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    color: #000000;
+    max-width: 300px;
+    width: 260px;
+    padding: 20px 0px 64px 20px;
+    border-radius: 0px 0px 40px 40px;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: inset 0px 0px 0px 0px blueviolet;
+    border: 1px solid #cacaca;
+    cursor: pointer;
+}
+.Zed:hover, .Zed:focus{
+    box-shadow: inset 0px 0px 0px 2px blueviolet;
+}
+.Titulo1{
+    font-family: 'Inter', sans-serif;
+    font-size: 20.5px;
+    color: rgb(0, 0, 0);
+}
+.PrecoAnterior{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    text-decoration: line-through;
+    margin-left: 4px;
+    color: #000000;
+}
+.PrecoNovo{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-left: 4px;
+    color: #000000;
+}
+.De{
+    padding-top: 22px;
+    border-top: 2px solid rgb(117, 117, 117);
+    max-width: 27px;
+    color: red;
+}
+.Por{
+    color: blueviolet;
+}
+.AVista{
+    padding-bottom: 26px;
+    border-bottom: 2px solid rgb(117, 117, 117);
+    max-width: 55px;
+}
+.PrecoCartao{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+.SeisX{
+    color: blueviolet;
+}
+.Juros{
+    font-size: 12px;
+}
+.ImagemDoZed1{
+    width: 280px;
+    position: relative;
+    top: 5px;
+    right: 18px;
+}
+.dialogZed{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogZed:hover{
+    transform: scale(1.02);
+}
+.dialogZed::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.conteudoModal{
+    display: flex;
+    margin: 10px 10px;
+}
+.modal{
+    background-color: #e0e0e0;
+    border:none;
+    border-radius: 10px;
+    width: 270px;
+}
+.fecharModalZed{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalZed:hover{
+    transform: scale(0.8);
+}
+/* TERMINO DO PRODUTO ZED */
+
+/* PRODUTO DA ASHE */
+
+.Ashe{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    color: #000000;
+    max-width: 300px;
+    width: 260px;
+    padding: 20px 0px 70px 20px;
+    border-radius: 0px 0px 40px 40px;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: inset 0px 0px 0px 0px blueviolet;
+    border: 1px solid #cacaca;
+    cursor: pointer;
+}
+.Ashe:hover, .Ashe:focus{
+    box-shadow: inset 0px 0px 0px 2px blueviolet;
+}
+.ImagemDaAshe1{
+    width: 180px;
+    margin-left: 28px;
+} 
+.dialogAshe{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogAshe:hover{
+    transform: scale(1.02);
+}
+.dialogAshe::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalAshe{
+    display: flex;
+    align-items: center;
+}
+.fecharModalAshe{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalAshe:hover{
+    transform: scale(0.8);
+}
+/* TÉRMINO PRODUTO ASHE */
+
+.Thresh{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    color: #000000;
+    max-width: 300px;
+    width: 260px;
+    padding: 12px 60px 62px 20px;
+    border-radius: 0px 0px 40px 40px;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: inset 0px 0px 0px 0px blueviolet;
+    border: 1px solid #cacaca;
+    cursor: pointer;
+}
+.Thresh:hover, .Thresh:focus{
+    box-shadow: inset 0px 0px 0px 2px blueviolet;
+}
+.ImagemDoThresh1{
+    width: 310px;
+    position: relative;
+    top: 5px;
+    padding-bottom: 5px;
+}
+
+.dialogThresh{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogThresh:hover{
+    transform: scale(1.02);
+}
+.dialogThresh::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+} 
+
+.fecharModalThresh{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalThresh:hover{
+    transform: scale(0.8);
+}
+@media (min-width: 600px) and (max-width: 1599px){
+    .modal{
+        background-color: #e0e0e0;
+        border:none;
+        border-radius: 10px;
+        width: 270px;
+    }
+    .info{ 
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    
+    .tituloModal{ 
+        font-size: 22px;
+        margin-bottom: 12px;
+        margin-top: 8px;
+    }
+    
+    .avaliacaoModal{ 
+        background-color: #e0e0e0;
+        max-width: 400px;
+        height: 40px;
+        border-radius: 10px;
+        padding-left: 12px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
+    }
+    .estrelas{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .precoModal{ 
+        font-size: 23px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: baseline;
+    }
+    .parcelaModal{
+        margin-left: 6px;
+        font-size: 15px;
+    }
+    .freteModal{
+        display: flex;
+        align-items: center;
+    }
+    .tituloFrete{
+        margin-left: 5px;
+    }
+    .caminhaoModal{
+        margin-right: 5px;
+    }
+    .prazoEntrega{
+        font-size: 13px;
+        margin-bottom: 17px;
+    }
+    .adicionarCarrinho{
+        background-color: #e0e0e0;
+        border: 1px solid #b4b4b4;
+        padding: 16px;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: transform 0.15s;
+    }
+    .adicionarCarrinho:hover{
+        transform: scale(0.97);
+        background-color: blueviolet;
+        color: white;
+        cursor: pointer;
+    }
+    .comprarAgora{
+        background-color: #e0e0e0;
+        border: 1px solid #b4b4b4;
+        padding: 16px;
+        width: 180px;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-left: 5px;
+        transition: transform 0.15s;
+    }
+    .comprarAgora:hover{
+        transform: scale(0.97);
+        background-color: blueviolet;
+        color: white;
+        cursor: pointer;
+    } 
+    
+}
+@media (min-width: 1600px) and (max-width: 2000px){
+    .modal{
+        background-color: #e0e0e0;
+        border:none;
+        border-radius: 10px;
+        width: 466px;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        margin-left: 22px;
+    }
+    .tituloModal{ 
+        font-size: 28px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .avaliacaoModal{
+        background-color: #e0e0e0;
+        font-size: 22px;
+        max-width: 500px;
+        height: 52px;
+        border-radius: 10px;
+        padding-left: 12px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+    .estrelas{
+        width: 80px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .precoModal{
+        font-size: 34px;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 30px;
+    }
+    .parcelaModal{
+        margin-left: 6px;
+        font-size: 24px;
+    }
+    .freteModal{
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .tituloFrete{
+        margin-left: 5px;
+    }
+    .caminhaoModal{
+        margin-right: 5px;
+    }
+    .prazoEntrega{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .botoesComprar{
+        margin-bottom: 14px;
+    }
+    .adicionarCarrinho{
+        background-color: #e0e0e0;
+        border: 1px solid #b4b4b4;
+        padding: 18px;
+        border-radius: 10px;
+        font-size: 25px;
+        transition: transform 0.15s;
+    }
+    .adicionarCarrinho:hover{
+        transform: scale(0.97);
+        background-color: blueviolet;
+        color: white;
+        cursor: pointer;
+    }
+    .comprarAgora{
+        background-color: #e0e0e0;
+        border: 1px solid #b4b4b4;
+        padding: 18px;
+        border-radius: 10px;
+        font-size: 25px;
+        margin-left: 5px;
+        transition: transform 0.15s;
+    }
+    .comprarAgora:hover{
+        transform: scale(0.97);
+        background-color: blueviolet;
+        color: white;
+        cursor: pointer;
+    }
+}

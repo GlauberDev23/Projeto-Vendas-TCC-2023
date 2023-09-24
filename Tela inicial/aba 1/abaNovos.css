@@ -1,0 +1,236 @@
+.AbaNovos{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media (max-width: 1000px){
+    .AbaNovos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.T-ProdutosNovos{
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    color: rgb(0, 0, 0); 
+}
+.Mousepad{
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #e9e9e9;
+    cursor: pointer;
+}
+.IMG-AbaNovos{
+    width: 270px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e9e9e9;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: inset 0px 0px 0px 0px blueviolet;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.IMG-AbaNovos:hover, .IMG-AbaNovos:focus{
+    box-shadow: inset 0px 4px 0px 0px blueviolet;
+}
+.InfoAbaNovos{
+    padding: 10px 0px 50px 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+.CorLetrasAbaNovos{
+    color: black;
+}
+.PrecoAbaNovos{
+    font-size: 25px;
+}
+.AVistaAbaNovos{
+    color: blueviolet;
+    font-size: 13.5px;
+}
+.SeisXAbaNovos{
+    font-size: 14px;
+}
+.CartaoAbaNovos{
+    font-size: 17px;
+}
+.JurosAbaNovos{
+    color: blueviolet;
+    font-size: 13px;
+}
+.dialogMousepad{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogMousepad:hover{
+    transform: scale(1.02);
+}
+.dialogMousepad::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.tituloModalMousepad{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+@media (min-width: 1600px) and (max-width: 2000px){
+    .tituloModalMousepad{
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+}
+.freteModalMousepad{
+    display: flex;
+    align-items: center;
+}
+.fecharModalMousepad{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalMousepad:hover{
+    transform: scale(0.8);
+}
+/* Draven Boneco */
+
+.DravenBoneco{
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #e9e9e9;
+    padding: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+.dialogDraven{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogDraven:hover{
+    transform: scale(1.02);
+}
+.dialogDraven::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalDraven{
+    display: flex;
+    align-items: center;
+}
+.fecharModalDraven{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalDraven:hover{
+    transform: scale(0.8);
+}
+/* Término boneco do Draven */
+
+/* Boneco do Blitz */
+.BlitzcrankBoneco{
+    border: 1px solid #e9e9e9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+.dialogBlitz{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogBlitz:hover{
+    transform: scale(1.02);
+}
+.dialogBlitz::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalBlitz{
+    display: flex;
+    align-items: center;
+}
+.fecharModalBlitz{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalBlitz:hover{
+    transform: scale(0.8);
+}
+
+/* Término Blitz boneco */
+
+/* Caderno do Yasuo */
+.CadernoYasuo{
+    border: 1px solid #e9e9e9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+.dialogYasuo{
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 27%;
+    left: 14%;
+    width: 74%;
+    min-width: 800px;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow-y: hidden;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}   
+.dialogYasuo:hover{
+    transform: scale(1.02);
+}
+.dialogYasuo::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+.freteModalYasuo{
+    display: flex;
+    align-items: center;
+}
+.fecharModalYasuo{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px 15px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.fecharModalYasuo:hover{
+    transform: scale(0.8);
+}

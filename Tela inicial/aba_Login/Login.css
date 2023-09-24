@@ -173,6 +173,7 @@ a{
     justify-content: center;
     color: blueviolet;
     margin-top: 10px;
+    cursor: pointer;
 }
 .botaoEntrar{
     background-color: #f0f0f0;
