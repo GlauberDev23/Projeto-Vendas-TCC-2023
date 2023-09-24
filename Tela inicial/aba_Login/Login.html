@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,27 +12,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet">
     <title>Login - B-NASHOR</title>
 </head>
+
 <body>
     <div class="container1">
 
         <div class="setaVoltar">
-            <a href="../aba 1/home.html" class="setaVoltarLogin"><img src="../assets/left-arrow.png" alt="seta para voltar ao início" class="imagemSetaVoltar">
-            Voltar ao início
+            <a href="../aba 1/home.html" class="setaVoltarLogin"><img src="../assets/left-arrow.png"
+                    alt="seta para voltar ao início" class="imagemSetaVoltar">
+                Voltar ao início
             </a>
         </div>
         <form class="login">
             <div class="criandoLogin">
-               <p class="tituloLogin">Que bom ter você de volta ! </p>
-               <div class="sessaoGoogle">
+                <p class="tituloLogin">Que bom ter você de volta ! </p>
+                <div class="sessaoGoogle">
                     <a href="https://accounts.google.com/" target="_blank" class="entrarGoogle">
-                    <img src="../assets/google.png" alt="Entrar com a conta Google" class="fotoGoogle">
-                    <p>Continuar com o Google</p>
+                        <img src="../assets/google.png" alt="Entrar com a conta Google" class="fotoGoogle">
+                        <p>Continuar com o Google</p>
                     </a>
                 </div>
                 <div class="sessaoFacebook">
                     <a href="https://www.facebook.com/" target="_blank" class="entrarFacebook">
-                    <img src="../assets/facebookAzul.png" alt="Entrar com a conta Facebook" class="fotoFacebook">
-                    <p>Continuar com o Facebook</p>
+                        <img src="../assets/facebookAzul.png" alt="Entrar com a conta Facebook" class="fotoFacebook">
+                        <p>Continuar com o Facebook</p>
                     </a>
                 </div>
 
@@ -39,28 +42,43 @@
 
                 <div class="sessaoEntrarInput">
                     <input type="email" class="emailUsuario" placeholder="Email">
-                <br>
+                    <br>
                     <input type="password" class="senhaUsuario" placeholder="Senha">
-                <br>
+                    <br>
                     <button class="botaoEntrar">Entrar</button>
-                <div class="outraSessao">
-                    <div class="senhaEsquecida">
-                        <p>Esqueci a senha</p>
+                    <div class="outraSessao">
+                        <div class="senhaEsquecida">
+                            <p>Esqueci a senha</p>
+                        </div>
+                        <p class="novoUsuario">Novo aqui? <a href="../aba Cadastro/Conta.html" class="criarConta">Criar
+                                conta</a></p>
                     </div>
-                    <p class="novoUsuario">Novo aqui? <a href="../aba Cadastro/Conta.html" class="criarConta">Criar conta</a></p>
-                </div>  
-                </div>    
+                </div>
             </div>
         </form>
-        
+
         <dialog class="dialogPai">
-            <div class="conteudoModalSenha">
-                <video autoplay loop>
-                    <source src="../assets/email.mp4">
-                </video>
+            <div class="dialogConteudoPai">
+                <div class="conteudoModalSenha">
+                    <img src="../assets/x.png" class="fecharModalSenhaEsquecida">
+                    <div class="videoLoopEmail">
+                        <video autoplay loop class="emailVideo">
+                            <source src="../assets/email.mp4">
+                        </video>
+                    </div>
+                    <div class="tituloEndereçoEmail">
+                        <p>Insira o endereço de e-mail associada à sua conta B-Nashor.</p>
+                    </div>
+                    <form class="credenciais">
+                        <input type="email" class="codigoEmail">
+                    </form>
+                    <div class="botaoSenhaEsquecida">
+                        <button class="botaoEnviar">Enviar código</button>
+                    </div>
+                </div>
             </div>
-    </dialog>
-    </section>
-</div>
-<script src="../aba_Login/Login.js"></script>
+        </dialog>
+        </section>
+    </div>
+    <script src="../aba_Login/Login.js"></script>
 </body>

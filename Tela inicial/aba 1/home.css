@@ -18,7 +18,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: blueviolet;
-    width: 100%;
+    width: 100vw;
 }
 .logo1{
     margin: 20px;
@@ -69,13 +69,13 @@ a{
     color: #ffffff;
     text-decoration: none;
 }
-/* */--------------------------------------------------------------/* */
-.banner{
+
+.banner1{
     background-image: url("../assets/fotoLoL.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 300px;
     display: flex;
     align-items: center;
@@ -112,7 +112,7 @@ a{
     padding-bottom: 30px;
     border-radius: 20px;
 }
-.AatroxAviso1{
+.kaynAviso{
     width: 100vw;
     width: 850px;
     height: 140px;
