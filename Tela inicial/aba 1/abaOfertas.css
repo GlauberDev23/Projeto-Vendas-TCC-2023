@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 130px;
+    gap: 121px;
 }
 .ofertadia{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 40px;
     color: rgb(0, 0, 0);
-    margin-top: 10%; 
+    margin-top: 70px; 
 }
 @media (max-width: 850px){
     .ProdutosDaOferta{
@@ -23,7 +23,7 @@
     color: #000000;
     max-width: 300px;
     width: 260px;
-    padding: 20px 0px 64px 20px;
+    padding: 20px 0px 77px 20px;
     border-radius: 0px 0px 40px 40px;
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;
@@ -133,7 +133,7 @@
     color: #000000;
     max-width: 300px;
     width: 260px;
-    padding: 20px 0px 70px 20px;
+    padding: 20px 0px 76px 20px;
     border-radius: 0px 0px 40px 40px;
     transition: box-shadow 0.2s ease-in-out;
     box-shadow: inset 0px 0px 0px 0px blueviolet;

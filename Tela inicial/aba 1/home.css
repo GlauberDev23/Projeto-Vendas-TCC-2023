@@ -28,7 +28,8 @@ body{
     position: relative;
 }
 #input1{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
     border-radius: 30px;
     border: none;
     outline: none;
@@ -39,7 +40,8 @@ body{
     margin-left: 12px;
 }
 #menu1{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
     display: flex;
     gap: 30px;
     margin: 20px 50px;
@@ -55,7 +57,7 @@ body{
 #elementosHeader{
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 #lupa{
     position: absolute;
@@ -111,6 +113,8 @@ a{
     max-width: 968px;
     padding-bottom: 30px;
     border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 .kaynAviso{
     width: 100vw;
@@ -128,8 +132,8 @@ a{
 }
 .T-Entrega{
     font-size: 18px;
-    font-family: 'Inter', sans-serif;
-    margin-left: 42px;
+    font-family: 'Cinzel', serif;
+    margin-left: 30px;
 }
 .D-Entrega{
     color: #474747;
@@ -142,8 +146,8 @@ a{
 }
 .T-Email{
     font-size: 18px;
-    font-family: 'Inter', sans-serif;
-    margin-left: 58px;
+    font-family: 'Cinzel', serif;
+    margin-left: 53px;
 }
 .D-Email{
     color: #474747;
@@ -158,8 +162,8 @@ a{
 }
 .T-Verificado{
     font-size: 18px;
-    font-family: 'Inter', sans-serif;
-    margin-left: 36px;
+    font-family: 'Cinzel', serif;
+    margin-left: 22px;
 }
 .D-Verificado{
     color: #474747;
@@ -206,7 +210,7 @@ a{
     transform: scale(0.85);
 }
 .menuItemFooter{
-    font-family: 'Inter', 'sans-serif';
+    font-family: 'Cinzel', serif;
     font-size: 20px;
     display: flex;
     justify-content: center;
