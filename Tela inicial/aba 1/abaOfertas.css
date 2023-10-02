@@ -334,7 +334,7 @@
         background-color: #e0e0e0;
         border:none;
         border-radius: 10px;
-        width: 466px;
+        width: 418px;
     }
     .info{
         display: flex;
@@ -343,8 +343,8 @@
     }
     .tituloModal{ 
         font-size: 28px;
-        margin-top: 25px;
-        margin-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 22px;
     }
     .avaliacaoModal{
         background-color: #e0e0e0;
