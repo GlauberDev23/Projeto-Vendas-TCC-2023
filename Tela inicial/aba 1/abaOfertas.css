@@ -336,6 +336,14 @@
         border-radius: 10px;
         width: 418px;
     }
+    .modalMousePad{
+        background-color: #e0e0e0;
+        border:none;
+        border-radius: 10px;
+        width: 418px;
+        margin-top: 20px;
+    }
+    
     .info{
         display: flex;
         justify-content: center;
