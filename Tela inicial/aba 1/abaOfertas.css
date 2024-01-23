@@ -340,8 +340,16 @@
         background-color: #e0e0e0;
         border:none;
         border-radius: 10px;
-        width: 466px;
+        width: 418px;
     }
+    .modalMousePad{
+        background-color: #e0e0e0;
+        border:none;
+        border-radius: 10px;
+        width: 418px;
+        margin-top: 20px;
+    }
+    
     .info{
         display: flex;
         justify-content: center;
@@ -349,8 +357,8 @@
     }
     .tituloModal{ 
         font-size: 28px;
-        margin-top: 25px;
-        margin-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 22px;
     }
     .avaliacaoModal{
         background-color: #e0e0e0;
