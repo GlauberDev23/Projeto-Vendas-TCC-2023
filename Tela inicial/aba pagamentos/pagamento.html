@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <title>Pagamentos - B-NASHOR</title>
+</head>
+
+<body>
+    <section class="container1">
+        <section class="conteudoHeader">
+            <div id="header">
+
+                <div id="logoInput">
+                    <a href="../aba 1/home.html"><img class="logo1" src="../assets/logo.png" alt="logo 1"></a>
+
+                    <input type="text" id="input1" placeholder="O que procura?">
+                    <img id="lupa" src="../assets/lupa.png" alt="lupa">
+                </div>
+
+                <nav>
+                    <ul id="menu1">
+                        <div id="elementosHeader">
+                            <img class="home" src="../assets/home.png" alt="home">
+                            <li class="inicio"><a class="menuItem" href="./home.html">Inicio</a></li>
+                        
+                            <img class="promocao" src="../assets/promotions.png" alt="promoção">
+                            <li class="promo"><a class="menuItem" href="#esgotando">Esgotando</a></li>
+                            
+                            <img class="carrinho" src="../assets/carrinho.png" alt="carrinho">
+                            <li class="coisas"><a class="menuItem" href="#">Carrinho</a></li>
+                    
+                            <img class="user" src="../assets/user.png" alt="user">
+                            <li class="login1"><a class="menuItem" href="../aba_Login/Login.html">Login ou<br>criar
+                                    conta</a></li>
+                        </div>
+                    </ul>
+            </div>
+            </nav>
+        </section>
+
+        <section class="pagamentos">
+            <div class="confirmacaoDaCompra">
+                <div class="pagamentoZed">
+                    <div class="outrosAngulosFotoZed">
+                        <img src="../assets/ZedCostas.png" alt="Zed Costas" onclick="mudarImagemZed('../assets/ZedCostas.png')" class="imagemZedCostas">
+                        <img src="../assets/ZedDesmontado.png" alt="Zed Desmontado" onclick="mudarImagemZed('../assets/ZedDesmontado.png')" class="imagemZedDesmontado">
+                        <img src="../assets/ZedFrente.png" alt="Zed Frente" onclick="mudarImagemZed('../assets/ZedFrente.png')" class="imagemZedFrente">
+                      </div>
+                    
+                      <div class="fotoPrincipalZed">
+                        <img src="../assets/ChampZed.png" alt="Imagem Principal Zed" class="imagemZedPagamento" id="imagemPrincipalZed">
+                      </div>
+                </div>
+                <div class="informacoesParaCompra">
+                    <p class="tituloConfirmacaoCompra">Campeão Zed Tamanho 18cm Skin Base</p>
+
+                    <div class="avaliacaoDaCompra">
+                        <p>5.0 </p><img src="../assets/5estrelas.png" alt="" class="estrelas">
+                        <p>| 108 vendidos | 64 avaliações </p>
+                    </div>
+                    
+                    <div class="formaDeEntrega">
+                        <p class="entreguePor">Entregue por
+                        <img src="../assets/correios.png" alt="" class="entregaCorreios">
+                        </p>
+                    </div>
+
+                    <div class="precoPagamentos">
+                        <p class="precoAnterior">R$ 199,99</p>
+                        <p>R$ 169,99</p>
+                        <div class="parcelaPagamentos">
+                            <p>ou 6x de R$ 28,33 sem juros</p>
+                        </div>
+                    </div>
+
+                    <div class="fretePagamentos">
+                        <img src="../assets/delivery.png" alt="" class="caminhaoPagamentos">
+                        <p class="tituloFretePagamentos">Frete GRÁTIS para este produto</p>
+                    </div>
+
+                    <div class="formasDePagamentos">
+                        <p class="selecionarPagamento">
+                            Selecione a forma de pagamento:
+                        </p>
+
+                        <br>
+
+                        <div class="imagensFormasDePagamentos">
+                            <img src="../assets/pix.png" alt="" class="imagemPix">
+                            <img src="../assets/masterCard.png" alt="" class="imagemCartaoMaster">
+                            <img src="../assets/nubank.png" alt="" class="imagemNubank">
+                            <img src="../assets/boleto.png" alt="" class="imagemBoleto">
+                        </div>
+                    </div>
+                </div>    
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <script src="pagamento.js"></script>
+</body>
+</html>

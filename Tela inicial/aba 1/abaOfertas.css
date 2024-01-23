@@ -258,7 +258,6 @@
         margin-bottom: 12px;
         margin-top: 8px;
     }
-    
     .avaliacaoModal{ 
         background-color: #e0e0e0;
         max-width: 400px;
@@ -296,6 +295,13 @@
     .prazoEntrega{
         font-size: 13px;
         margin-bottom: 17px;
+    }
+    .botoesComprar{
+        display: flex;
+    }
+    .direcionamentoCompra{
+        color: black;
+        text-decoration: none;
     }
     .adicionarCarrinho{
         background-color: #e0e0e0;
@@ -390,6 +396,10 @@
     }
     .botoesComprar{
         margin-bottom: 14px;
+    }
+    .direcionamentoCompra{
+        color: black;
+        text-decoration: none;
     }
     .adicionarCarrinho{
         background-color: #e0e0e0;

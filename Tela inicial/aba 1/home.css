@@ -77,7 +77,7 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 300px;
     display: flex;
     align-items: center;
